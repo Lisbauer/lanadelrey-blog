@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("./images/bg-main.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+header {
+  background: #1e000096;
+  padding-bottom: 1em;
+  margin-bottom: 3em;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4em;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.contenedor_principal {
+  min-width: 1366px;
+}
+.logo {
+  background-image: url("./images/logo.png");
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+.logo h1 {
+  visibility: hidden;
+}
+.navbar {  
+  display: flex;
+  justify-content: center;
+}
+.navbar li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  background: linear-gradient(10deg, #690404, #0c0000);
+  font-size: 1.4em;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10%;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+.navbar li:hover {
+  background: linear-gradient(70deg, #690404, #0c0000);
+}
+.navbar li.select {
+  border: solid 1px red;
+}
+.seccion {
+  scroll-margin-top: 14em;
+}
+/* Select con position */
+.select {
+  position: relative;
+  display: inline-block;
+}
+.select:active {
+  background-color: pink;
+}
+#listado,
+#albumes {
+  position: absolute;
+  display: none;
+  padding-left: 0px;
+  margin: 0;
+  top: 45px;
+}
+#listado {
+  right: -18px;
+}
+#albumes {
+  left: 0;
+}
+#listado li,
+#albumes li {
+  margin: 0;
+  position: relative;
+  background: rgb(47, 0, 0);
+  font-size: 0.7em;
+}
+#listado li a:hover,
+#albumes li a:hover {
+  color: rgb(255, 0, 0);
+}
+.navbar .select:hover #listado,
+.navbar .select:hover #albumes {
+  display: block;
+  margin: 0;
+}
+#inicio p {
+  font-family: "Raleway", sans-serif;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.2em;
+  text-align: left;
+}
+#inicio img {
+  margin: 1.3em;
+}
+/* Sección biografía */
+.titulos {
+  font-family: "Cormorant SC", serif;
+  font-size: 3.7em;
+  font-weight: 400;
+  margin-top: 2.5em;
+}
+#biografia p {
+  font-family: "Raleway", sans-serif;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.2em;
+  font-size: 1.3em;
+  text-align: left;
+}
+/* Sección premios */
+#premios p {
+  font-family: "Raleway", sans-serif;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.2em;
+  font-size: 1.3em;
+}
+#columnas_contenedor {
+  column-count: 2;
+  width: 50%;
+  margin: 0 auto;
+  column-gap: 1px;
+  background: linear-gradient(10deg, #a07300, #432500);
+  border-radius: 30px;
+  margin-top: 3em;
+  padding: 2em;
+  text-align: start;
+  font-family: "Raleway", sans-serif;
+}
+.premios_columnas li {
+  list-style: none;
+}
+#video_contenedor_columnas div iframe {
+  margin: 15px;
+}
+#primer_contenedor_footer {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-size: 2em;
+}
+#segundo_contenedor_footer {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+/* Sección discografía */
+.discografia {
+  background: linear-gradient(120deg, rgb(65, 0, 0), rgb(17, 0, 0));
+  border-radius: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 3em;
+  width: 70%;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.766);
+  scroll-margin-top: 17em;
+}
+.discografia div {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+.discografia div h2 {
+  display: none;
+}
+.discografia img {
+  width: 300px;
+  height: 300px;
+}
+.discografia div ol li {
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  font-size: 1.3em;
+  line-height: 2.2em;
+}
+
+/* Galería */
+#galeria_fotos {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0 40px 0;
+  scroll-margin-top: 14em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#galeria_fotos li {
+  list-style: none;
+}
+#galeria_fotos li a img {
+  width: 300px;
+  height: 300px;
+}
+/* Formulario */ 
+#form_titulo{
+  font-family: "Cormorant SC", serif;
+  font-size: 2em;
+}
+#form_subtitulo{
+  font-family: "Cormorant SC", serif;
+  font-size: 1.7em;
+}
+#form_contenedor{
+  background: linear-gradient(120deg, rgb(65, 0, 0), rgb(17, 0, 0));
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.766);
+  scroll-margin-top: 17em;
+  padding: 60px;
+  border-radius: 4%;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 3em;
+}
+#form_contenedor form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form_group{
+  display: flex;
+  flex-direction: column;
+}
+.form_group span{
+  font-size: 20px;
+}
+.form_group input{
+  height: 35px;
+  border-radius: 8px;
+  border: transparent;
+  font-size: 16px;
+}
+.form_group_checkbox{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.form_group_checkbox label{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#button{
+  border: 1px solid red;
+  color: white;
+  background: linear-gradient(-70deg, #690404, #0c0000);
+}
+#button:hover {
+    background: linear-gradient(70deg, #690404, #0c0000);
+}
+#button:active {
+  background: linear-gradient(70deg, #c60101, #0c0000);
+}
+#gracias_imagen{
+  width: 30%;
+}
+/* responsive */ 
+@media (max-width: 800px) {
+  .contenedor_principal {
+    max-width: 800px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+  }  
+  .navbar li{
+    padding: 5px 10px 5px 10px;
+    font-size: 1em;
+  }
+  .titulos{
+    font-size: 2em;
+  }
+  #primer_contenedor_footer{
+    font-size: 1.6em;
+  }
+  #segundo_contenedor_footer{
+    font-size: 1.6em;
+  }
+  #inicio img{
+    width: 60%;
+  }
+  #inicio p{
+    font-size: 1em;
+  }
+  #biografia p{
+    font-size: 1em;
+  }
+  .discografia div ol li {
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
+  .discografia div{
+    gap: 1.4em;
+  }
+  .discografia iframe{
+    width: 90%;
+  }
+  .discografia img{
+    width: 80%;
+    height: auto;
+  }
+  #form_titulo{
+    font-size: 1.4em;
+  }
+  #entrevistas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #video_contenedor_columnas{
+    width: 100vw;
+  }
+  #video_contenedor_columnas div iframe{
+    margin: 20px 0 0 0;
+    width: 80%;
+  }
+  #gracias_imagen{
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .titulos{
+    font-size: 1.6em;
+  }
+  .discografia div ol li {
+    font-size: 0.7em;
+  }
+  #form_subtitulo{
+    font-size: 1.3em;
+  }
+  #form_contenedor{
+    padding: 10px;
+    border-radius: 4%;
+  }
+  .form_group span{
+    font-size: 16px;
+  }
+  .form_group input{
+    height: 30px;
+    font-size: 13px;
+  }
+  #primer_contenedor_footer{
+    font-size: 1.2em;
+  }
+  #segundo_contenedor_footer{
+    font-size: 1.2em;
+  }
+}
+
+
+
+

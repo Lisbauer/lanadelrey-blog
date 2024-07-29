@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Lana Del Rey - Formulario</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><h1>Lana Del Rey</h1></div>
+
+        <ul class="navbar">
+          <li>
+            <a href="../index.html">Inicio</a>
+            <ul id="listado">
+              <li><a href="#biografia">Biografía</a></li>
+              <li><a href="#premios">Premios</a></li>
+              <li><a href="#entrevistas">Entrevistas</a></li>
+            </ul>
+          </li>
+          <li><a href="discografia.html">Discografía</a></li>
+          <li class="select"><a href="#form_contenedor">Formulario</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 id="form_titulo">
+        Adquirí la edición gold de su último album <br />
+        <a href="https://www.youtube.com/watch?v=ZegtK54DC4c&list=OLAK5uy_nHy9AQa4vZ3De0zzhjXqt0P-lCRnSiukA">"Did You Know That There's a Tunnel Under Ocean Blvd"</a>
+      </h2>
+      <h3 id="form_subtitulo">Completa el siguiente formulario</h3>
+      <div id="form_contenedor">
+        <form action="gracias.html" method="post" enctype="multipart/form-data">
+          <div class="form_group">
+            <span>Nombre Completo</span>
+            <input
+              placeholder="Ingrese su nombre"
+              type="text"
+              name="nombre-completo"
+              id="nombre"
+              required
+            />
+          </div>
+          <div class="form_group">
+            <span>E-mail</span>
+            <input
+              placeholder="Ingrese su mail"
+              type="email"
+              name="email"
+              id="mail"
+              required
+            />
+          </div>
+          <div class="form_group">
+            <span>País</span>
+            <input
+              placeholder="Ingrese su país"
+              type="text"
+              name="pais"
+              id="pais"
+              required
+            />
+          </div>
+          <div class="form_group">
+            <span>Dirección</span>
+            <input
+              placeholder="Ingrese su dirección"
+              type="text"
+              name="direccion"
+              id="direccion"
+              required
+            />
+          </div>
+          <div class="form_group">
+            <span>Teléfono</span>
+            <input
+              placeholder="Ingrese su número telefónico"
+              type="number"
+              name="telefono"
+              id="tel"
+              required
+            />
+          </div>
+          <div class="form_group">
+            <span>Fecha de entrega</span>
+            <input
+              type="date"
+              name="telefono"
+              id="entrega"
+              required
+            />
+          </div>
+
+          <div class="form_group_checkbox">
+            <span>Disponibilidad de horario de entrega</span>
+            <label for="horariomañana"
+              ><input
+                type="checkbox"
+                id="horariomañana"
+                value="Video Games"
+              />
+              8:00 AM - 1:00 PM</label
+            >
+            <label for="horariotarde"
+              ><input
+                type="checkbox"
+                id="horariotarde"
+                value="Summertime Sadness"
+              />
+              1:00 PM - 6:00 PM</label
+            >
+           
+          </div>
+          <div class="form_group">
+            <span>Comprobante de Pago</span>
+            <input
+              type="file"
+              id="comprobante-de-pago"
+              name="comprobante de pago"
+              accept="file/*"
+              required
+            />
+          </div>
+          <div class="form_group">
+            <input type="submit" id="button" value="Enviar" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
