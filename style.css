@@ -273,9 +273,6 @@ a{
 #button:active {
   background: linear-gradient(70deg, #c60101, #0c0000);
 }
-#gracias_imagen{
-  width: 30%;
-}
 /* responsive */ 
 @media (max-width: 800px) {
   .contenedor_principal {
